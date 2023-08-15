@@ -1,0 +1,13 @@
+section, footer {
+    background: #1B1B1B;
+    color: #868c96;
+}
+
+footer p {
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer img {
+    width: 44px;
+}

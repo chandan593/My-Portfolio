@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/skill.css">
+    <link rel="stylesheet" href="./css/homeNavbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/loader.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/dd096b3ac9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <%- include('partials/navbar'); %>
+
+        <!-- home -->
+        <section class="home bd-grid" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-1">Hello, Myself</div>
+                    <div class="text-2">Chandan Kumar</div>
+                    <div class="text-3">And I'm a <span class="typing"></span></div>
+                    <!-- <a href="./public/download/RESUME.pdf" download="./public/download/RESUME.pdf">Download CV</a> -->
+                    <a href="./download/RESUME.pdf" download="">Download CV</a>
+                </div>
+                <div class="soc">
+                    <ul>
+                        <li>
+                            <div class="crc">
+                                <a href="https://github.com/chandan593"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="crc">
+                                <a href="https://www.instagram.com/chandann_011/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="crc">
+                                <a href="https://twitter.com/Chandan31929656"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="crc">
+                                <a href="https://www.linkedin.com/in/chandan-kumar-b650b11b8/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social">
+                <ul>
+                    <li>
+                        <div class="circle">
+                            <a href="https://github.com/chandan593" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle">
+                            <a href="https://www.instagram.com/chandann_011/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle">
+                            <a href="https://twitter.com/Chandan31929656" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle">
+                            <a href="https://www.linkedin.com/in/chandan-kumar-b650b11b8/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <div>
+            <%- include('partials/footer'); %>
+        </div>
+
+        <script>
+            var typed = new Typed(".typing", {
+                strings: ["Web Developer", "CyberSec Enthusiast"],
+                typeSpeed: 100,
+                backSpeed: 60,
+                loop: true
+            });
+
+            var typed = new Typed(".typing-2", {
+                strings: ["Web Developer", "CyberSec Enthusiast"],
+                typeSpeed: 100,
+                backSpeed: 60,
+                loop: true
+            });
+        </script>

@@ -1,0 +1,74 @@
+<%- include('partials/header'); %>
+    <%- include('partials/navbar'); %>
+        <div class="header-projects">
+            <h1 style="font-size: 32px;">Projects</h1>
+        </div>
+        <section class="projects-section">
+
+            <div class="project-card">
+                <img src="./img/temperature_con.PNG" alt="Project 1" height="70px" width="70px" />
+                <h2>Temperature Converter</h2>
+                <p>It is a website which is used to convert the degree celsius temperature into fahrenheit and kelvin.
+                </p>
+                <a href="https://github.com/chandan593/Temperature-Converter" target="_blank"><i class="fas fa-external-link-alt"></i>
+                    Learn more</a>
+            </div>
+
+            <div class="project-card">
+                <img src="./img/landing_page.PNG" alt="Project 2" />
+                <h2>Landing Page</h2>
+                <p>A landing page is a single web page that is designed with a specific purpose,
+                     related to marketing or advertising. This landing page is a clone 
+                     of Netflix.</p>
+                <a href="https://github.com/chandan593/Landing-Page" target="_blank"><i
+                        class="fas fa-external-link-alt"></i> Learn more</a>
+            </div>
+
+            <div class="project-card">
+                <img src="./img/Portfolio.PNG" alt="Project 3" />
+                <h2>Portfolio</h2>
+                <p>A personal project portfolio website to display my skills and projects to potential employers or
+                    clients.</p>
+                <a href="" target="_blank"><i
+                        class="fas fa-external-link-alt"></i> Learn more</a>
+            </div>
+
+        </section>
+
+        <div class="header-projects">
+            <h2 style="font-size: 32px;">More Works</h2>
+        </div>
+
+        <section class="projects-section">
+            
+            <div class="project-card">
+                <img src="./img/Certificate.jpg" alt="More Works 3" />
+                <h2>SEO Internship</h2>
+                <p>Worked on wordPress and conducted keyword research to identify relevant search terms 
+                    for improved website visibility.
+                </p>
+            </div>
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            // Add smooth scrolling to project links
+            $('a[href^="#"]').on('click', function (event) {
+                if (this.hash !== '') {
+                    event.preventDefault();
+
+                    const hash = this.hash;
+
+                    $('html, body').animate(
+                        {
+                            scrollTop: $(hash).offset().top
+                        },
+                        800, function () {
+                            window.location.hash = hash;
+                        }
+                    );
+                }
+            });
+        </script>
+        <%- include('partials/footer'); %>

@@ -151,12 +151,13 @@ button:hover {
 @media screen and (max-width: 650px) {
     .about .content img {
         margin-bottom: 35px;
-        height: auto;
+        height: 350px;
         width: 250px;
     }
 
     .about .content .img_wrapper {
-        height: 320px;
+        height: 350px;
+        width: 250px;
     }
 
 
